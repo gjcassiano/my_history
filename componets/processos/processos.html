@@ -1,0 +1,71 @@
+<panel-jovas>
+	<div  layout="row">
+		<form layout="row" layout-algin="start center" flex="100" layout-padding>
+	            <md-input-container >
+	                <label>Filtrar por Reclamante</label>
+	                <input ng-model="filter.matricula">
+	            </md-input-container>
+
+	            <md-input-container >
+	                <label>Filtrar por Reclamada</label>
+	                <input ng-model="filter.name">
+	            </md-input-container>
+
+	            <md-input-container flex="20">
+	                <label>Filtrar por Fase</label>
+	                <md-select name="type" ng-model="filter.userType">
+	                    <md-option value="1">Fase 1</md-option>
+	                    <md-option value="0">Fase 2</md-option>
+	                </md-select>
+	            </md-input-container>
+	    </form>        
+	    <div layout="row" layout-align="center center" layout-padding>
+	    	<md-button ng-click="navigate('alunos')" class="md-raised md-primary">Adicionar</md-button>
+	    </div>
+    </div> 
+</panel-jovas>
+<panel-jovas title="Processos">
+	<md-card-title layout="column">
+    <span class="md-headline">Processos</span>
+  </md-card-title-text>
+  	{{processosList}}
+    <mdt-table title='Processos' mdt-row="{
+    	'data':processosList, 
+    	'table-row-id-key': 'id',
+    	'column-keys':[
+    		'name',
+    		'teste'
+    		]}">
+
+    	<mdt-header-row>
+    		<mdt-column>name</mdt-column>
+    		<mdt-column>teste</mdt-column>
+    	</mdt-header-row>
+
+    </mdt-table>	
+           <!--  <div layout="row">
+
+                <md-input-container>
+                    <label>Email</label>
+                    <input ng-model="user.email" type="email">
+                </md-input-container>
+
+                <md-input-container flex="20" >
+                    <label>Tipo de usuario</label>
+                    <md-select name="type" ng-model="user.userType" required>
+                        <md-option value="1">PROFESSOR</md-option>
+                        <md-option value="0">ALUNO</md-option>
+                    </md-select>
+                </md-input-container>
+
+            </div>
+
+        <md-input-container>
+
+            <md-button ng-click="navigate('alunos')" class="md-raised">Cancelar</md-button>
+            <md-button ng-if = "!editarUser" ng-click="criar(user)" class="md-raised">Criar</md-button>
+            <md-button ng-if = "editarUser" ng-click="criar(user)" class="md-raised">Salvar</md-button>
+
+        </md-input-container> -->
+
+</panel-jovas>

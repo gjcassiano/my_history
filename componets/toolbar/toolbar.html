@@ -1,0 +1,10 @@
+<md-toolbar layout="row">
+    <div class="md-toolbar-tools"  layout="row"    layout-align="start center">
+        <img class="logo" alt="Logo" src="resource/imgs/logo.png"></img>
+         <md-button class="button-menu" ng-class="{'active':checkActiveUrl('#/processos')}" ng-click="goto('#/processos')">Processos</md-button>
+         <md-button class="button-menu" ng-class="{'active':checkActiveUrl('#/audiencias')}" ng-click="goto('#/audiencias')">Audiencia</md-button>
+         <md-button class="button-menu" ng-class="{'active':checkActiveUrl('#/relatorios')}" ng-click="goto('#/relatorios')">Relatorios</md-button>
+         <md-button class="button-menu" ng-class="{'active':checkActiveUrl('#/usuarios')}" ng-click="goto('#/usuarios')">Usuarios</md-button>
+    </div>
+    <md-button class="">Sair</md-button>
+</md-toolbar>
