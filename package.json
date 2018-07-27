@@ -1,0 +1,24 @@
+{
+  "name": "jovasnodejs",
+  "version": "0.0.0",
+  "description": "teste node in appegine",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.5.2",
+    "express": "~4.7.2",
+    "method-override": "~2.1.2",
+    "mongoose": "~3.6.2",
+    "morgan": "~1.2.2",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.38.0"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "bower install"
+  },
+  "author": ""
+}
