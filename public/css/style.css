@@ -7,6 +7,7 @@ body {
     font-family: jovasFont;
     float: left;
     width: 100%;
+    background: #e0f7fa70;
 }
 
 loader-spinner {
@@ -125,16 +126,37 @@ md-progress-circular svg path {
     user-select: none;
     display: grid;
     text-align: center;
-    background: rgb(0, 191, 210);
-    height: 100px;
-    color: white;
-    font-size: 21px;
+    background: #00bcd4;
+    height: 80px;
+    color: #e0f7fa;
+    font-size: 20px;
 }
 
 .header:hover {
   transform: rotate(360deg);
 }
-
+.container {
+  height: 100%;
+  background: white;
+  width: 800px;
+  display: block;
+  align-content: ;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.container .title {
+  font-size: 18px;
+  text-align: center;
+  display: block;
+}
+.container .subtitle {
+  font-size: 16px;
+  margin-left: 16px;
+}
+.container img {
+    height: 110px;
+}
 
 /*bug fix at md-select*/
 

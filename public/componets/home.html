@@ -3,12 +3,45 @@
 	<div class="header">
 		<h1>Hello my old friend, how are you?</h1>
 	</div>
+	<div class="container">
+		<span class="title">I'm Giovani, graduated in Computer Engineering,
+			working as a Software Engineer and <br> I love coding :D</span>
+		<span class="subtitle">
+			I'll show my skils
+		</span>
+		<div class="panel">
+		</div>
+		<md-content class="md-padding" layout-xs="column" layout="row">
+	     <div flex-xs flex-gt-xs="50" layout="column">
 
-	<div onwheel="homeCtrl.scrollEvent(event)">
-		<h1>scroll up count : {{upCount}}</h1>
-		<h1>scroll down count : {{downCount}}</h1>
+					<md-card>
+						 <img ng-src="imgs/angular_icon.svg" class="md-card-image">
+						 <md-card-title>
+							 <md-card-title-text>
+								 <span class="md-headline">In-card mixed actions</span>
+							 </md-card-title-text>
+						 </md-card-title>
+						 <md-card-actions layout="row" layout-align="start center">
+							 <md-card-icon-actions>
+								 <md-button class="md-icon-button" aria-label="Favorite">
+									 <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+								 </md-button>
+								 <md-button class="md-icon-button" aria-label="Share">
+									 <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+								 </md-button>
+							 </md-card-icon-actions>
+							 <md-button>Action 1</md-button>
+							 <md-button>Action 2</md-button>
+						 </md-card-actions>
+						 <md-card-content>
+							 <p>
+								 The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+								 two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+							 </p>
+						 </md-card-content>
+					 </md-card>
+				 </div>
+			 </md-content>
+
 	</div>
-
-	<md-button onClick="\.scrollEvent(event)">teste</md-button>
-
 </div>

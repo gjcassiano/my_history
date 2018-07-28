@@ -2,8 +2,8 @@ app.controller('HomeController', function($scope, $rootScope, $timeout, $mdConst
     $rootScope.loading = true;
     $scope.$on('$viewContentLoaded', function() {
 
-        $timeout(function() { $rootScope.loading = false; console.log('cahgned.');}, 5000);
-        
+        $timeout(function() { $rootScope.loading = false; console.log('cahgned.');}, 500);
+
     });
 
     $scope.scrollEvent = function(e){
